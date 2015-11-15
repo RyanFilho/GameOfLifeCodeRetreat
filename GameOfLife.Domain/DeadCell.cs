@@ -8,9 +8,11 @@ namespace GameOfLife.Domain
 {
     class DeadCell : Cell
     {
-        public override bool isAlive()
+        public override bool live(int liveNeighbors)
         {
-            throw new NotImplementedException();
+            if( liveNeighbors == 3)
+                return true;
+            return false;
         }
     }
 }

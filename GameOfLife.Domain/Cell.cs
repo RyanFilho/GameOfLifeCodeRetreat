@@ -8,6 +8,6 @@ namespace GameOfLife.Domain
 {
     public abstract class Cell
     {
-        public abstract bool isAlive();
+        public abstract bool live(int liveNeighbors);
     }
 }
