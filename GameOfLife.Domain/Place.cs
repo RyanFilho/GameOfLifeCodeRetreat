@@ -25,6 +25,5 @@ namespace GameOfLife.Domain
                 Cell = new DeadCell();
         }
 
-
     }
 }

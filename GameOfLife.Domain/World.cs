@@ -21,8 +21,19 @@ namespace GameOfLife.Domain
 
         private int CountLiveNeighbors(Place place)
         {
-
-            return 3;
+            List<Position> neighbors = place.Position.Neighbors();
+            int count = 0;
+            foreach (var p in Mapa)
+            {
+                foreach (var n in neighbors)
+                {
+                    if (p.Position.Equals(n))
+                    {
+                        count++;
+                    }
+                }
+            }            
+            return count;
         }
     }
 }
