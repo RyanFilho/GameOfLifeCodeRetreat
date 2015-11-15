@@ -8,21 +8,35 @@ namespace GameOfLife.Domain
 {
     class Place
     {
-        public Position Position { get; set; }
-        public Cell Cell { get; set; }
+        public Position PlacePosition { get; set; }
+        public Cell PlacedCell { get; set; }
 
-        public Place(Position position, Cell cell)
+        public Place(Position position, bool liveOrDeadCell)
         {
-            Position = position;
-            Cell = cell;
+            PlacePosition = position;
+            if (liveOrDeadCell)
+            {
+                PlacedCell = new LiveCell();
+            }
+            else
+            {
+                PlacedCell = new DeadCell();
+            }
         }
 
-        public void LiveOrDie(int liveNeighbors)
+        public bool LiveOrDie(int liveNeighbors)
         {
-            if (Cell.live(liveNeighbors))
-                Cell = new LiveCell();
+            if (PlacedCell.live(liveNeighbors))
+                return true;
             else
-                Cell = new DeadCell();
+                return false;
+        }
+
+        public bool HasAliveCell()
+        {
+            if (PlacedCell is LiveCell)
+                return true;
+            return false;
         }
 
     }

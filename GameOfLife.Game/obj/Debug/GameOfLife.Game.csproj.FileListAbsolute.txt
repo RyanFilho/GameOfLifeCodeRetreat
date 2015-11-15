@@ -1,0 +1,8 @@
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Game.exe.config
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\obj\Debug\GameOfLife.Game.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Game.exe
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Game.pdb
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Domain.dll
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Domain.pdb
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\obj\Debug\GameOfLife.Game.exe
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\obj\Debug\GameOfLife.Game.pdb

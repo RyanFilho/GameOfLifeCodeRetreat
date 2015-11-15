@@ -12,7 +12,8 @@ namespace GameOfLife.Domain
         {
             if( liveNeighbors == 3)
                 return true;
-            return false;
+            else
+                return false;
         }
     }
 }
