@@ -2,3 +2,4 @@ C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Domain
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Domain\bin\Debug\GameOfLife.Domain.pdb
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Domain\obj\Debug\GameOfLife.Domain.dll
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Domain\obj\Debug\GameOfLife.Domain.pdb
+C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Domain\obj\Debug\GameOfLife.Domain.csprojResolveAssemblyReference.cache

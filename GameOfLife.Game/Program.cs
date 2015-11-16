@@ -14,23 +14,23 @@ namespace GameOfLife.Game
             World mundo = new World();
            
 
-            for (int i = 0; 1 != 2 ; i++)
-            {
-                
+            while(true)
+            {                
                 var mapa = mundo.getMapVetor();
-                double count = 0;
-                foreach (var v in mapa)
+                int count = 0;
+                for (int j = 0; j < 3; j++)
                 {
-                    if (v)
-                        Console.Write("X");
-                    else
-                        Console.Write(" ");
-
-                    if (count / 3.0 == 0)
-                        Console.Write('\n');
-                    
+                    for (int k = 0; k < 3; k++)
+                    {
+                        if (mapa[count])
+                            Console.Write("X");
+                        else
+                            Console.Write(" ");
+                        count++;
+                    }
+                    Console.Write('\n');
                 }
-                System.Threading.Thread.Sleep(3000);
+                System.Threading.Thread.Sleep(1000);
                 System.Console.Clear();
                 mundo.Turn();
             }           
