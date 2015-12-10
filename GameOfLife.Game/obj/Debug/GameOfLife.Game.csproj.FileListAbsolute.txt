@@ -6,3 +6,6 @@ C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\b
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\bin\Debug\GameOfLife.Domain.pdb
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\obj\Debug\GameOfLife.Game.exe
 C:\Users\Ryan\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife.Game\obj\Debug\GameOfLife.Game.pdb
+C:\Users\estagio04\Documents\GitHub\GameOfLifeCodeRetreat\GameOfLife.Game\bin\Debug\GameOfLife.Game.exe.config
+C:\Users\estagio04\Documents\GitHub\GameOfLifeCodeRetreat\GameOfLife.Game\obj\Debug\GameOfLife.Game.exe
+C:\Users\estagio04\Documents\GitHub\GameOfLifeCodeRetreat\GameOfLife.Game\obj\Debug\GameOfLife.Game.pdb
