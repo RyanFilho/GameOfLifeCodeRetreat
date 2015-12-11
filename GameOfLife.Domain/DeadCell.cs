@@ -10,7 +10,7 @@ namespace GameOfLife.Domain
     {
         public override bool live(int liveNeighbors)
         {
-            if( liveNeighbors == 3)
+            if (liveNeighbors == 3)
                 return true;
             return false;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameOfLife.Domain
 {
-    class Position
+    public class Position
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -30,6 +30,21 @@ namespace GameOfLife.Domain
             neighbors.Add(new Position(X + 1, Y + 1));
 
             return neighbors;
+        }
+
+        public override bool Equals(object obj) {
+            Position objToCompare = obj as Position;
+            if (objToCompare == null)
+                return false;
+
+            if (objToCompare.X == this.X && objToCompare.Y == this.Y)
+                return true;
+
+            return false;
+        }
+
+        public override int GetHashCode() {
+            return (this.X.ToString() + this.Y.ToString()).GetHashCode();
         }
     }
 }
