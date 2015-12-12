@@ -26,10 +26,7 @@ namespace GameOfLife.Domain
 
         public bool LiveOrDie(int liveNeighbors)
         {
-            if (PlacedCell.live(liveNeighbors))
-                return true;
-            else
-                return false;
+            return PlacedCell.live(liveNeighbors);
         }
 
         public bool HasLivingCell()

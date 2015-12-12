@@ -33,7 +33,7 @@ namespace GameOfLife.Domain
 
             foreach (var n in neighbors)
             {
-                if (Map.Exists(m => m.PlacePosition.X == n.X && m.PlacePosition.Y == n.Y && m.PlacedCell is LiveCell))
+                if (IsLiveNeighbors(n))
                     count++;
             }
      
@@ -54,7 +54,21 @@ namespace GameOfLife.Domain
             return vetor;
         }
 
+<<<<<<< HEAD
         private void InitMockWorld()
+=======
+        public bool IsLiveNeighbors(Position position)
+        {            
+           foreach(var place in Map)
+            {
+                if (place.PlacePosition.Equals(position))
+                    return place.HasAliveCell();
+            }
+            return false;
+        }
+
+        private List<Place> MockWorld()
+>>>>>>> origin/master
         {
             List<Place> places = new List<Place>();
 

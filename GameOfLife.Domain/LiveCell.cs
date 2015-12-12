@@ -11,9 +11,8 @@ namespace GameOfLife.Domain
         public override bool live(int liveNeighbors)
         {
             if (liveNeighbors == 2 || liveNeighbors == 3)
-                return true;
-            else
-                return false;
+                return true;            
+            return false;
         }
     }
 }
