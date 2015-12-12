@@ -12,7 +12,7 @@ namespace GameOfLife.Domain
         private List<Place> NewMap { get; set; }
         public World()
         {
-            Map = MockWorld();
+            InitMockWorld();
             NewMap = new List<Place>();
         }
         public void Turn()
@@ -42,31 +42,51 @@ namespace GameOfLife.Domain
 
         public bool[] getMapVetor()
         {
-            bool[] vetor = new bool[100];
+            bool[] vetor = new bool[Map.Count];
             int count = 0;
+
             foreach(var p in Map)
             {
-                vetor[count] = p.HasAliveCell();
+                vetor[count] = p.HasLivingCell();
                 count++;
             }
 
             return vetor;
         }
 
-        private List<Place> MockWorld()
+        private void InitMockWorld()
         {
             List<Place> places = new List<Place>();
-            places.Add(new Place(new Position(0, 0), false));
-            places.Add(new Place(new Position(0, 1), true));
-            places.Add(new Place(new Position(0, 2), false));
-            places.Add(new Place(new Position(1, 0), false));
-            places.Add(new Place(new Position(1, 1), true));
-            places.Add(new Place(new Position(1, 2), false));
-            places.Add(new Place(new Position(2, 0), false));
-            places.Add(new Place(new Position(2, 1), true));
-            places.Add(new Place(new Position(2, 2), false));
 
-            return places;
+            for (int i = 0; i < 10; i++)
+                for (int j = 0; j < 10; j++)
+                    places.Add(new Place(new Position(i, j), false));
+
+            Map = places;
+
+            InsertLiveCell(new Position(1, 1));
+            InsertLiveCell(new Position(2, 2));
+            InsertLiveCell(new Position(2, 3));
+            InsertLiveCell(new Position(3, 1));
+            InsertLiveCell(new Position(3, 2));
+        }
+
+        private void InsertDeadCell(Position position)
+        {
+            foreach (var p in Map)
+            {
+                if (p.PlacePosition.X == position.X && p.PlacePosition.Y == position.Y)
+                    p.InsertDeadCell();
+            }
+        }
+
+        private void InsertLiveCell(Position position)
+        {
+            foreach (var p in Map)
+            {
+                if (p.PlacePosition.X == position.X && p.PlacePosition.Y == position.Y)
+                    p.InsertLiveCell();
+            }
         }
     }
 }

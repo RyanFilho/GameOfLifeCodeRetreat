@@ -32,11 +32,21 @@ namespace GameOfLife.Domain
                 return false;
         }
 
-        public bool HasAliveCell()
+        public bool HasLivingCell()
         {
             if (PlacedCell is LiveCell)
                 return true;
             return false;
+        }
+
+        public void InsertDeadCell()
+        {
+            PlacedCell = new DeadCell();
+        }
+
+        public void InsertLiveCell()
+        {
+            PlacedCell = new LiveCell();
         }
 
     }

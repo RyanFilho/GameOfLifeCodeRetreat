@@ -18,9 +18,9 @@ namespace GameOfLife.Game
             {                
                 var mapa = mundo.getMapVetor();
                 int count = 0;
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 10; j++)
                 {
-                    for (int k = 0; k < 3; k++)
+                    for (int k = 0; k < 10; k++)
                     {
                         if (mapa[count])
                             Console.Write("X");
@@ -30,7 +30,7 @@ namespace GameOfLife.Game
                     }
                     Console.Write('\n');
                 }
-                System.Threading.Thread.Sleep(1000);
+                System.Threading.Thread.Sleep(500);
                 System.Console.Clear();
                 mundo.Turn();
             }           
